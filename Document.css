@@ -1,0 +1,184 @@
+/* Document Page Styles */
+
+/* Hero Section */
+.document-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80'); /* Updated to match previous yellow design */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.document-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(225, 177, 44, 0.8), rgba(161, 122, 10, 0.9)); /* Yellow design */
+}
+
+.document-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.document-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.document-hero-content span {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Document Section */
+.document-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.separator {
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Document List */
+.document-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.document-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.document-item:hover {
+    transform: translateY(-5px);
+}
+
+.document-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.document-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.document-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--dark-color);
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: var(--primary-color);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: white;
+    color: var(--primary-color);
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .document-item {
+        width: 90%;
+    }
+
+    .document-hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

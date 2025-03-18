@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronniel Tuazon - Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">RonnielTuazon</div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Document.html">Documents</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <a href="Contact.html"><button class="connect-btn">Let's Connect</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hey I'm <span>Ron</span></h1>
+                    <div class="typewriter">
+                        <h2>I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+                    </div>
+                    <p>Detail-oriented and analytical Computer Science graduate with a strong foundation in data analysis, problem-solving, and process optimization. Experienced in customer support and order management, with a demonstrated ability to analyze data, identify trends, and drive process improvements.</p>
+                    <p>Proficient in SQL, Microsoft Excel, and business intelligence tools, with a keen interest in leveraging technology to support data-driven decision-making. Adept at handling large datasets, interpreting insights, and streamlining workflows to enhance efficiency.</p>
+                    <div class="cta-buttons">
+                        <a href="Ronniel Tuazon.pdf" target="_blank"> <button  class="btn primary-btn">Download CV</button>
+                        <a href="Document.html"><button class="btn secondary-btn">My Projects</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <!-- Replace with your actual image -->
+                        <img src="Picture.jpg" alt="Ronniel Tuazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- Call to Action -->
+           <section class="cta-section">
+            <div class="container">
+                <h2>Want to know more about my skills?</h2>
+                <p>Let's connect and discuss how my abilities can benefit your team or project.</p>
+                <a href="Contact.html"> <button  class="cta-button">Contact Me</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ronniel Tuazon. All rights reserved.</p>
+        </div>
+    </footer>
+    </main>
+
+    <script src="home.js">
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('nav-open');
+        });
+        
+    </script>
+</body>
+</html>
